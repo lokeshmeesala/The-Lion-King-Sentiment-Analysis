@@ -24,40 +24,30 @@ In this hackathon, you are expected to:
 ## Main Tasks: 
 
 1. Collect Audience reviews from ""www.rottentomatoes.com"" for the film: “The Lion King (2019)” with at least the following features.
-
-  a. ReviewID
-  b. Reviewer Name
-  c. Review
-  d. Rating
-  e. Date-of-Review
+  
+    a. ReviewID<br>
+    b. Reviewer Name<br>
+    c. Review<br>
+    d. Rating<br>
+    e. Date-of-Review<br>
 
 2. Label the Review Sentiment:
 
 You must label the data based on the following condition on Rating:
-
- if ‘Rating’ > 3 then positive review else negative review – Create target attribute with the name: “sentiment” (binary class)
-
-“Drop the Rating attribute once the Target is derived. It should not be part of model building as independent attributes.”
+if ‘Rating’ > 3 then positive review else negative review – Create target attribute with the name: “sentiment” (binary class)
 
 3. Exploratory Data Analysis using visualizations Jupiter notebook format. (train data to be used for this)
 
-  a. What is that the good and bad, people are talking about the film? 
-   (Hint:  you may pick any meaningful n-grams and obtain their frequency to emphasize the importance of n-gram)
- 
-  b. Any other meaningful Insights
-
+    a. What is that the good and bad, people are talking about the film?<br>
+    b. Any other meaningful Insights<br>
+    
 4. Perform Sentiment Classification using supervised learning algorithms
-
-a. Identify the best model using traditional Classification ML algorithms like NaiveBayes, Logistic Regression, SVM, Decision Trees, Ensembles etc.
-
-b. Identify the best model using Deep Learning Classification ML algorithms like CNN, RNN/LSTM etc.
-
-Choose the model that outperforms all others for your test predictions and in your submissions. 
+    a. Identify the best model using traditional Classification ML algorithms like NaiveBayes, Logistic Regression, SVM, Decision Trees, Ensembles etc.<br>
+    b. Identify the best model using Deep Learning Classification ML algorithms like CNN, RNN/LSTM etc. Choose the model that outperforms all others for your test predictions and in your submissions.<br>
 
 5. Clustering the Reviews – Comparing ‘Cluster Label’ with Train data Target ‘sentiment’ 
-
-a.  Take only ‘reviews’ attribute from train data and label them into two clusters using any clustering algorithm of your choice. 
-b.  compare the cluster labels with the train data target attribute - ‘sentiment’ and Write a brief comparison report with your observations.
+    a.  Take only ‘reviews’ attribute from train data and label them into two clusters using any clustering algorithm of your choice.<br>
+    b.  compare the cluster labels with the train data target attribute - ‘sentiment’ and Write a brief comparison report with your observations.<br>
 
 ## Evaluation Metric: 
 F1-score for Negative reviews.
